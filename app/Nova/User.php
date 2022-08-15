@@ -2,6 +2,7 @@
 
 namespace App\Nova;
 
+use App\Nova\Fields\VaporImage;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Gravatar;
 use Laravel\Nova\Fields\ID;
@@ -60,6 +61,8 @@ class User extends Resource
                 ->onlyOnForms()
                 ->creationRules('required', 'string', 'min:8')
                 ->updateRules('nullable', 'string', 'min:8'),
+
+            VaporImage::make('Avatar')->path('avatars'),
         ];
     }
 

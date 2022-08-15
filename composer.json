@@ -10,7 +10,9 @@
         "laravel/framework": "^9.19",
         "laravel/nova": "^3.0",
         "laravel/tinker": "^2.7",
-        "nova-kit/helpers": "^0.4.4"
+        "league/flysystem-aws-s3-v3": "^3.2",
+        "nova-kit/helpers": "^0.4.4",
+        "nova-kit/nova-on-vapor": "^0.1.0"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
